@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Sweetheart 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e6e6fa, #f3e5f5);
+      font-family: 'Quicksand', sans-serif;
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 3em;
+      color: #ff4081;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.4em;
+      margin: 20px;
+      color: #555;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .slideshow {
+      margin: 30px auto;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.3);
+    }
+
+    .slideshow img {
+      width: 100%;
+      display: none;
+    }
+
+    .love-letter {
+      font-family: 'Pacifico', cursive;
+      background: #fff0f5;
+      padding: 25px;
+      margin: 30px auto;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 20px;
+      font-size: 1.4em;
+      color: #d81b60;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .mood-message {
+      background: #ffffffcc;
+      color: #444;
+      padding: 20px;
+      margin: 30px auto;
+      width: 80%;
+      max-width: 700px;
+      border-radius: 20px;
+      font-size: 1.2em;
+      line-height: 1.6;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: floatUp 6s infinite ease-in;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-110vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes floatDown {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>To My Cutie Pie 🧸💖</h1>
+  <p>You’re the sprinkles on my cupcake, the stars in my sky, and the smile in my heart. ✨</p>
+
+  <!-- Slideshow -->
+  <div class="slideshow">
+    <img src="https://i.postimg.cc/5NJ9KVzY/Whats-App-Image-2025-04-06-at-10-37-32-10fdbe4e.jpg" alt="Memory 1" style="display:block;">
+    <img src="https://i.postimg.cc/wTkqSG5W/Whats-App-Image-2025-04-06-at-11-05-39-6eb83fdd.jpg" alt="Memory 2">
+    <img src="https://i.postimg.cc/XJg1Vd20/Whats-App-Image-2025-07-05-at-19-15-53-b697d690.jpg" alt="Memory 3">
+    <img src="https://i.postimg.cc/sXb7vdyz/Whats-App-Image-2025-07-05-at-23-01-48-efe07751.jpg" alt="Memory 2">
+    <img src="https://i.postimg.cc/jqJyB5QS/Whats-App-Image-2025-07-05-at-23-01-48-df53003e.jpg" alt="Memory 2">
+    <img src="https://i.postimg.cc/qqnnKbM3/Whats-App-Image-2025-07-05-at-23-01-47-93f1f453.jpg" alt="Memory 2">
+
+  </div>
+
+  <!-- Love Letter -->
+  <div class="love-letter">
+    My sweetheart 💌<br><br>
+    Every moment with you is like a page from a fairytale.  
+    Your smile is my favorite melody, and your hugs are my safest and most comfortable place.  
+    I made this little surprice just for you — because you deserve all the love in the world.  
+    I love you more than all the stars and marshmallows combined. 💫🍬  
+    <br><br>Forever your Indu 🐻
+  </div>
+
+  <!-- Mood Message -->
+  <div class="mood-message">
+    My love 💕<br><br>
+    I just want you to pause for a moment and remember how incredibly special you are.  
+    You light up my world in ways I never thought possible.  
+    Your smile is my favorite sunrise, your voice my favorite song, and your presence my peace.  
+    I know life can get overwhelming sometimes, but I want you to know that I’m always here —  
+    cheering for you, believing in you, and loving you more with every heartbeat.  
+    You don’t have to be perfect, you just have to be you — and that’s more than enough for me. 💖
+  </div> 
+  <!-- Floating Hearts -->
+  <script>
+    for (let i = 0; i < 60; i++) {
+      let heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+
+      const fromTop = Math.random() > 0.5;
+      heart.style.top = fromTop ? '-20px' : '100vh';
+      heart.style.animationName = fromTop ? 'floatDown' : 'floatUp';
+
+      // Random pastel color
+      const colors = ['#ffb6c1', '#ffc1e3', '#f8bbd0', '#f48fb1', '#e1bee7'];
+      heart.style.background = colors[Math.floor(Math.random() * colors.length)];
+      heart.style.setProperty('--heart-color', heart.style.background);
+
+      document.body.appendChild(heart);
+    }
+
+    // Slideshow logic
+    let slides = document.querySelectorAll('.slideshow img');
+    let index = 0;
+    setInterval(() => {
+      slides[index].style.display = 'none';
+      index = (index + 1) % slides.length;
+      slides[index].style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
